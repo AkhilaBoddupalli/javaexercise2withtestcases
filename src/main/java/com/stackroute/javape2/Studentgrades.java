@@ -2,7 +2,7 @@ package com.stackroute.javape2;
 
 
 public class Studentgrades {
-    public int calculateGrades(int number[]) {
+    public int calculateGrades(int number[]) { //caculating average
 //        number.toString().split(",");
         int sum = 0;
         for (int i = 0; i <= number.length; i++) {
@@ -17,7 +17,7 @@ public class Studentgrades {
 //
 //        }
 
-        public int maximum(int number[])
+        public int maximum(int number[]) //finding maximum number
         {
             int large=number[0];
            for(int i=0;i<=number.length;i++)
@@ -30,7 +30,7 @@ public class Studentgrades {
            }
            return large;
         }
-    public int minimum(int number[])
+    public int minimum(int number[]) //finding minimum number
     {
         int small=number[0];
         for(int i=0;i<=number.length;i++)

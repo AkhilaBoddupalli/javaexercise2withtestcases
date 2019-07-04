@@ -8,29 +8,30 @@ public class MemberTest {
     Member obj;
 
     Member.MemberVariable obj1;
-    @BeforeClass
-    public static void setUpOnce() {
-
-
-    }
-
-    @AfterClass
-    public static void teardownOnce() {
-
-
-    }
-
-    @Before
-    public void setUp() {
-
-        obj=  new Member();
-        obj1 = obj.new MemberVariable();
-    }
+@Before
+public void setUp() {
+    System.out.println("Before");
+    obj = new Member();
+}
 
     @After
     public void tearDown() {
+        System.out.println("After");
+        obj = null;
+    }
 
-        obj= null;
+    @Before
+    public void setUpBeforeClass() {
+        System.out.println("BeforeClass");
+        obj=  new Member();
+       obj1 = obj.new MemberVariable();
+
+    }
+
+    @After
+    public void tearDownAfterClass() {
+        System.out.println("AfterClass");
+
     }
 
     @Test

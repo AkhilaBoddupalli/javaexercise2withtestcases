@@ -11,12 +11,12 @@ public class CheckPalindromeandReverse {
 //            num /= 10;
 //        }
 
-        for(int i = input.length() - 1; i >= 0; i--)
+        for(int i = input.length() - 1; i >= 0; i--) //logic for reverse
         {
             reversed = reversed + input.charAt(i);
         }
 
-        if(temp==input)
+        if(temp==input) //palindrome
         {
             return "Entered input is a palindrome";
         }
